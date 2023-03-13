@@ -1,2 +1,2 @@
-﻿# bora-codar
-Aqui estão os desafios do bora codar da rocktseat que eu fiz e alguns mini projetos com javaScript.
+﻿# Mini projetos
+Aqui estão alguns mini projetos com HTML5, CSS3 e JavaScript que fiz baseado em alguns videos e desafios da rocketseat.
