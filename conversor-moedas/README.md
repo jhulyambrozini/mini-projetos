@@ -4,6 +4,9 @@ O presente projeto foi desenvolvido com a ajuda da Rocketseat afim de expandir m
 ## Layout
 - Foi utilizado esse layout do figma como base para o projeto: [Conversor](https://www.figma.com/community/file/1212757179376046656)
 
+### Layout final
+![layout](./assets/layout.png)
+
 ## Tecnologias utilizadas
 - HTML5
 - CSS3
