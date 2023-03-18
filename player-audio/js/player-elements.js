@@ -10,8 +10,12 @@ export default {
         this.seekbar = document.querySelector("#seekbar")
         this.currentDuration = document.querySelector("#current-duration")
         this.totalDuration = document.querySelector("#total-duration")
-        this.nextTrack = document.querySelector("#next-track");
-        this.previousTrack = document.querySelector("#previous-track");
+        this.nextTrack = document.querySelector("#next-track")
+        this.previousTrack = document.querySelector("#previous-track")
+        this.music01 = document.querySelector('.music-01')
+        this.music02 = document.querySelector('.music-02')
+        this.music03 = document.querySelector('.music-03')
+
     },
     createAudioElement(audio) {
         this.audio = new Audio(audio)
@@ -32,7 +36,11 @@ export default {
         this.seekbar.max = this.audio.duration
         this.totalDuration.innerText = secondsToMinutes(this.audio.duration)
 
-        this.nextTrack.onclick = () => this.next();
-        this.previousTrack.onclick = () => this.back();
+        this.nextTrack.onclick = () => this.next()
+        this.previousTrack.onclick = () => this.back()
+
+        
+        this.music02.onclick = () => this.listMusic()
+        
     }
 }
