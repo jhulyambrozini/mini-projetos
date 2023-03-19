@@ -43,9 +43,3 @@ class ValidaCPF {
     }
 
 }
-
-const cpf = new ValidaCPF('070.987.720-03')
-console.log(cpf.valida())
-
-const cpf1 = new ValidaCPF('111.111.111-11')
-console.log(cpf1.valida())
