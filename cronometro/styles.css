@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+@keyframes piscar {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  --bg-color: #020d28;
+  --bg-panel: #fff;
+}
+
+body {
+  background: var(--bg-color);
+  font-family: 'Open sans', sans-serif;
+}
+
+.container {
+  margin: 100px auto;
+  width: 400px;
+  background: var(--bg-panel);
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  place-content: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: blue;
+}
+
+.relogio {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+button {
+  padding: 5px;
+  height: 40px;
+  width: 100%;
+  cursor: pointer;
+  background-color: blue;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #020d28;
+}
+
+.relogio-piscar {
+  animation: piscar 
+                1.8s linear infinite;
+}
