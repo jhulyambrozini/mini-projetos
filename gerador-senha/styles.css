@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  --bg-color: #fff;
+  --bg-panel:  #d7d4d4;
+  --text-color: #007fcd;
+}
+
+body {
+  background: var(--bg-color);
+  font-family: 'Open sans', sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: var(--bg-panel);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.dark-mode {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+ }
+ 
+ .dark-mode input[type=checkbox]{
+   height: 0;
+   width: 0;
+   visibility: hidden;
+ }
+ 
+ .dark-mode label {
+   cursor: pointer;
+   color: transparent;
+   background: grey;
+   border-radius: 100px;
+   position: relative;
+ }
+ 
+ .dark-mode label::after{
+   content: '';
+   position: absolute;
+   top: 3px;
+   left: 3px;
+   width: 20px;
+   height: 20px;
+   background-color: white;
+   border-radius: 90px;
+   transition: 0.3s;
+ }
+ 
+ .dark-mode input:checked + label {
+   background-color: #007fcd;
+ }
+ 
+ .dark-mode input:checked + label::after {
+   left: calc(100% - 5px);
+   transform: translateX(-100%);
+ }
+ 
+ .dark-mode label:active:after {
+   width: 45px;
+ } 
+
+h1 {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.senha-gerada {
+  font-size: 18px;
+  color: var(--text-color);
+  margin: 20px 0;
+  width: 300px;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border: none;
+  outline: 0;
+}
+
+button {
+  display: block;
+  font-size: 18px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0987d6;
+  color: #fff;
+  margin-top: 20px;
+  cursor: pointer;
+}

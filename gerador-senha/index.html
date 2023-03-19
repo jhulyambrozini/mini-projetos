@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de senha</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+        <div class="dark-mode">
+            <h3>Light / Dark:</h3>
+            <input id="switch" type="checkbox" name="theme">
+            <label for="switch">toogle</label>
+        </div>
+      <h1>Gerador de senha</h1>
+      <div class="senha-gerada">Selecione as opções</div>
+
+      <label for="caracteres">Quantidade de caracteres</label>
+      <input id="caracteres" type="number" value="20" max="1" min="50" class="qtd-caracteres" /><br/>
+      
+      <label for="maiusculas">Adicionar maiúsculas</label>
+      <input id="maiusculas" type="checkbox" class="chk-maiusculas" checked /><br/>
+
+      <label for="minusculas">Adicionar minusculas</label>
+      <input id="minusculas" type="checkbox" class="chk-minusculas" /><br/>
+
+      <label for="numeros">Adicionar números</label>
+      <input id="numeros" type="checkbox" class="chk-numeros" /><br/>
+
+      <label for="simbolos">Adicionar simbolos</label>
+      <input id="simbolos" type="checkbox" class="chk-simbolos" checked />
+
+      <button class="gerar-senha">Gerar senha</button>
+    </main>
+
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
