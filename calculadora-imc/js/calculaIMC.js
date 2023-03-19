@@ -65,4 +65,4 @@ function meuEscopo() {
     }
 }
 
-meuEscopo();
+meuEscopo()
