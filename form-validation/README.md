@@ -6,6 +6,9 @@ O presente projeto foi desenvolvido afim de expandir meu aprendizado em HTML5, C
 - CSS3
 - JavaScript
 
+## Execução
+Basta clonar esta repositótio e abrir o arquivo index.html no navegador.
+
 ## Layout
 - Foi utilizado o layout desse projeto: [javascript-form](https://github.com/gabrieldiasss/javascript-form) como base.
 

@@ -6,6 +6,10 @@ O presente projeto foi desenvolvido com a ajuda da Rocketseat afim de expandir m
 - CSS3
 - SASS
 - JavaScript
+
+## Execução
+Basta clonar esta repositótio e abrir o arquivo index.html no navegador.
+
 ## Layout
 - Foi utilizado layout disponibilizado pela rocketseat.
 

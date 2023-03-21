@@ -4,6 +4,10 @@ O presente projeto foi desenvolvido com a ajuda da Rocketseat afim de expandir m
 - HTML5
 - CSS3
 - Figma
+
+## Execução
+Basta clonar esta repositótio e abrir o arquivo index.html no navegador.
+
 ## Layout
 - Pra o Dashboard foi usado este projeto do figma como base [Dashboard](https://www.figma.com/community/file/1210217615683203825)
 
