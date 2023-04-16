@@ -45,6 +45,7 @@ body {
     display: flex;
     justify-content: flex-end;
     color: #6B6B6B;
+    overflow: hidden;
 }
 
 .result {
@@ -54,6 +55,7 @@ body {
     justify-content: flex-end;
     width: 248px;
     height: 50px;
+    overflow: hidden;
 }
 
 .buttons {
@@ -75,6 +77,7 @@ button {
     border-radius: 999px;
     border: none;
     color: #fff;
+    cursor: pointer;
 }
 
 .color-one {

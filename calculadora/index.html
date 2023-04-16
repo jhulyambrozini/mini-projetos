@@ -15,75 +15,74 @@
     <div class="calculator">
         <div class="display">
             <div class="operation">
-                1 + 1
             </div>
             <div class="result">
-                2
+                0
             </div>
             
         </div>
         <div class="buttons">
             <div class="button">
-                <button class="delete-all color-one">CE</button>
+                <button class="clean-all color-one" >CE</button>
             </div>
             <div class="button">
-                <button class="delete">C</button>
+                <button class="clean">C</button>
             </div>
             <div class="button">
-                <button class="porcent">%</button>
+                <button class="operator" onclick="insert('**')">^</button>
             </div>
             <div class="button">
-                <button class="divide color-operation">÷</button>
+                <button class="operator color-operation" onclick="insert('/')">÷</button>
             </div>
             <div class="button">
-                <button class="number">7</button>
+                <button class="number" onclick="insert('7')">7</button>
             </div>
             <div class="button">
-                <button class="number">8</button>
+                <button class="number" onclick="insert('8')">8</button>
             </div>
             <div class="button">
-                <button class="number">9</button>
+                <button class="number" onclick="insert('9')">9</button>
             </div>
             <div class="button">
-                <button class="delete-all color-operation">x</button>
+                <button class="operator color-operation" onclick="insert('*')">x</button>
             </div>
             <div class="button">
-                <button class="delete-all">4</button>
+                <button class="number" onclick="insert('4')">4</button>
             </div>
             <div class="button">
-                <button class="delete-all">5</button>
+                <button class="number" onclick="insert('5')">5</button>
             </div>
             <div class="button">
-                <button class="delete-all">6</button>
+                <button class="number" onclick="insert('6')">6</button>
             </div>
             <div class="button">
-                <button class="delete-all color-operation">-</button>
+                <button class="operator color-operation" onclick="insert('-')">-</button>
             </div>
             <div class="button">
-                <button class="delete-all">1</button>
+                <button class="number" onclick="insert('1')">1</button>
             </div>
             <div class="button">
-                <button class="delete-all">2</button>
+                <button class="number" onclick="insert('2')">2</button>
             </div>
             <div class="button">
-                <button class="delete-all">3</button>
+                <button class="number" onclick="insert('3')">3</button>
             </div>
             <div class="button">
-                <button class="delete-all color-operation">+</button>
+                <button class="operator color-operation" onclick="insert('+')">+</button>
             </div>
             <div class="button">
-                <button class="delete-all ">
+                <button class="operator " onclick="insert('**1/2')">
                     √
                 </button>
             </div>
             <div class="button">
-                <button class="delete-all">0</button>
+                <button class="number" onclick="insert('0')">0</button>
             </div>
             <div class="button">
-                <button class="delete-all">,</button>
+                <button class="float" onclick="insert('.')">.</button>
             </div>
             <div class="button">
-                <button class="delete-all color-three">=</button>
+                <button class="color-three" onclick="calculation()">=</button>
             </div>
         </div>
     </div>
