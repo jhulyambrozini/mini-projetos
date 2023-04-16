@@ -12,4 +12,4 @@ Basta clonar esta repositótio e abrir o arquivo index.html no navegador.
 ## Layout
 O layout foi desenvolvido neste modelo figma: [layout](https://www.figma.com/community/file/1202607074523509182)
 
-![layout]('./assets/layout.png')
+![layout](./assets/layout.png)
