@@ -90,3 +90,9 @@ button {
 .color-three {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%), #7F45E2;
 }
+
+.ps {
+    color: #fff;
+    margin-top: 30px;
+    padding: 20px;
+}
