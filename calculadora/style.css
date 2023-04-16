@@ -52,7 +52,6 @@ body {
     font-size: 36px;
     padding: 0px;
     display: flex;
-    justify-content: flex-end;
     width: 248px;
     height: 50px;
     overflow: hidden;

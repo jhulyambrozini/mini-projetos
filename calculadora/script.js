@@ -17,8 +17,16 @@ clean.addEventListener('click', () => {
 // função de fazer operação
 const calculation = () => {
     if (result) {
-        result.innerText = eval(operation.innerText)
+        calc = eval(operation.innerText)
+        console.log(isNaN(calc), result)
+        if(isNaN(calc) || calc == undefined) {
+            return result.innerText = "Sintaxe error"
+         } else {
+            result.innerText = calc
+         }
     }
+
+    
 }
 // exibir operação no display
 const insert = (elem) => {
