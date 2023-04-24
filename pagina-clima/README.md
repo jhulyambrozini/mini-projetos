@@ -6,7 +6,6 @@ O presente projeto foi desenvolvido afim de expandir meu aprendizado em HTML5, C
 - CSS3
 - JavaScrpit
 - Figma
-
 ## Execução
 Basta clonar esta repositótio e abrir o arquivo index.html no navegador.
 

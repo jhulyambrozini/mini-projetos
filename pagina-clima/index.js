@@ -20,18 +20,27 @@ const sunset = document.querySelector('#sunset')
 const timeNow = document.querySelector('#time-now')
 
 const getDataWeather = async (city) => {
-  const apiWeatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=pt_br`
-  const res = await fetch(apiWeatherURL)
-  const data = await res.json()
+  try {
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=pt_br`)
 
-  return data
+    if (!response.ok) {
+      throw new Error('Cidade inválida. Não foi possivel obter as informações')
+    }
+
+    const data = await response.json()
+
+    return data
+
+  } catch (err) {
+    alert(err.message)
+  }
+
 }
 
 const showWeatherData = async (city) => {
   const data = await getDataWeather(city)
-  console.log(data)
 
-  cityName.innerText = data.name;
+  cityName.innerText = data.name
   cityCountry.innerText = data.sys.country
   tempNow.innerText = parseInt(data.main.temp)
   tempMax.innerText = parseInt(data.main.temp_max)
@@ -60,9 +69,7 @@ const showWeatherData = async (city) => {
   sunrise.innerText = `${hourSunrise}:${minutesSunrise}`
   sunriseTime.innerText = `${hourSunset}:${minutesSunset}`
   timeNow.innerText = `${hourTimer}:${minutesTimer}`
-
 }
-
 
 citySearch.addEventListener('click', () => {
   const city = cityInput.value
