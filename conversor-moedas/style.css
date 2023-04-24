@@ -49,15 +49,22 @@
   .money-wrapper {
     background-color: white;
     outline: 0.1rem solid #94a3b8;
-  
     width: 27rem;
-    padding: 1.6rem;
     border-radius: 0.8rem;
-  
     display: flex;
+    justify-content: center;
     align-items: center;
-  
+    padding: 0 1rem;
     position: relative;
+  }
+
+  .money-wrapper p {
+    padding-right: 4px;
+  }
+
+  .currency {
+    padding-top: .4rem;
+    padding-bottom: .4rem;
   }
   
   .money-wrapper:hover,
@@ -65,42 +72,28 @@
     outline: 0.25rem solid #7c3aed;
   }
   
+  
   /* AMOUNT */
   .amount {
     border: 0;
     font-size: 1.6rem;
     line-height: 2.4rem;
-  
     color: var(--text-color);
     width: 50%;
   }
   
-  .amount:focus {
+  .amount:focus, select:focus {
     outline: 0;
+    border: 0;
   }
   
-  /* DROPDOWN */
-  .dropdown {
-    --bg-hover: #ede9fe;
-    width: 13rem;
   
-    position: absolute;
-    top: 0;
-    right: 0;
-  
-    height: 5.6rem;
-    overflow: hidden;
-  }
-  
-  .dropdown:hover {
-    height: fit-content;
-    overflow: initial;
-  }
-  
-  .selected {
+  .selected, .value-real {
     display: flex;
     align-items: center;
     gap: 0.8rem;
+    border: none;
+    position: relative;
   
     border-radius: 0 0.8rem 0.8rem 0;
   
@@ -109,7 +102,7 @@
     cursor: pointer;
   }
   
-  .selected::before {
+  .selected::before, .value-real::before {
     content: "";
     height: 2.4rem;
     width: 0.1rem;
@@ -124,45 +117,11 @@
     background: url(./assets/chevron-down.svg) no-repeat;
   }
   
-  li:hover,
-  .selected:hover {
-    background-color: var(--bg-hover);
-  }
   
   .fi.fis {
     font-size: 2.4rem;
     border-radius: 50%;
-  }
-  
-  /*  UL */
-  ul {
-    list-style: none;
-  
-    background-color: white;
-    box-shadow: 0px 4px 16px rgba(15, 23, 42, 0.15);
-    border-radius: 8px;
-  
-    padding: 0;
-  
-    width: 16rem;
-    max-height: 17rem;
-  
-    margin-top: 0.8rem;
-  
-    overflow-y: scroll;
-  
-    position: relative;
-    z-index: 1;
-  }
-  
-  li {
-    padding: 1.2rem 1.6rem;
-  
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-  
-    cursor: pointer;
+    margin: 0;
   }
   
   /* CAMBIO */
@@ -206,7 +165,16 @@
     border-radius: 999px;
     padding: .4rem .8rem;
   }
-  
+
+  .cambio span,
+  .conversor-span,
+  .error-msg {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2rem;
+  }
+
   @media (max-width: 48rem) {
     main {
       padding: 1.6rem;

@@ -25,67 +25,35 @@
         <h2>Conversor de moedas</h2>
         <div class="wrapper">
           <div class="money-wrapper">
-            <input type="text" class="amount" value="$1.000" />
+            <p>R$</p>
+            <input
+              type="number"
+              class="amount"
+              id="amount-var"
+            />
 
-            <div class="dropdown">
-              <div class="selected">
-                <span class="fi fi-us fis"></span>
-                USD
-              </div>
-
-              <ul>
-                <li>
-                  <span class="fi fi-br fis"></span>
-                  BRL
-                </li>
-                <li>
-                  <span class="fi fi-us fis"></span>
-                  USD
-                </li>
-                <li>
-                  <span class="fi fi-eu fis"></span>
-                  EUR
-                </li>
-                <li>
-                  <span class="fi fi-gb fis"></span>
-                  GBP
-                </li>
-              </ul>
+            <div class="value-real">
+              <span class="fi fi-br fis"></span>
+              BRL
             </div>
           </div>
           <div class="middle">
             <img src="./assets/arrows-exchange.svg" alt="trocar moeda" />
           </div>
-          <div class="money-wrapper">
-            <input readonly type="text" class="amount" value="R$ 5.148,20" />
+          <div class="money-wrapper currency">
+            <span class="amount" id="amount-fix"></span>
 
             <div class="dropdown">
-              <div class="selected">
-                <span class="fi fi-br fis"></span>
-                BRL
-              </div>
-
-              <ul>
-                <li>
-                  <span class="fi fi-br fis"></span>
-                  BRL
-                </li>
-                <li>
-                  <span class="fi fi-us fis"></span>
-                  USD
-                </li>
-                <li>
-                  <span class="fi fi-eu fis"></span>
-                  EUR
-                </li>
-                <li>
-                  <span class="fi fi-gb fis"></span>
-                  GBP
-                </li>
-              </ul>
+              <select class="selected">
+                <option value="Dolar">Dolar</option>
+                <option value="Won">Won</option>
+                <option value="Euro">Euro</option>
+                <option value="Libras">Libras</option>
+              </select>
             </div>
           </div>
         </div>
+        <span class="conversor-span">*Valores da conversão válidos no dia 17/04/2023</span>
       </section>
       <section class="cambio">
         <h2>Taxa de câmbio</h2>
@@ -100,6 +68,7 @@
             <button>Máx</button>
           </div>
         </div>
+        <span>Gráfico ilustrativo</span>
       </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
