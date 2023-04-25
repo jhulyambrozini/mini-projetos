@@ -1,5 +1,5 @@
 # Criação de um web component com JavaScript
-O presente projeto está sendo desenvolvido com a ajuda da Rocketseat afim de expandir meu aprendizado em HTML5, CSS3 e JavaScript.
+Este projeto foi desenvolvido com a ajuda da Rocketseat afim de expandir meu aprendizado em HTML5, CSS3 e JavaScript.
 
 ## Tecnologias utilizadas
 - HTML5
