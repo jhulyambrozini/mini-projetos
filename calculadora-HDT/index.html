@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - HDT</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <h1>Calculadora - Hora de Trabalho (HDT) 🧮</h1>
+        <form>
+            <label for="horas-diarias">Horas diarias trabalhadas:</label>
+            <input type="number" id="horas-diarias">
+
+            <label for="dias-mes">Dias trabalhados no mês:</label>
+            <input type="number" id="dias-mes">
+
+            <label for="despesas">Dispesas fixas mensais:</label>
+            <input type="number" id="despesas">
+
+            <label for="equipamento">Valor do seu equipamento:</label>
+            <input type="number" id="equipamento">
+
+            <button id="calcular">Calcular Agora</button>
+        </form>
+
+        <div class="resultado hidden" id="resultado">
+            <span>Valor da hora trabalhada:</span>
+            <span id="valor-total">R$ 00.00</span>
+            <p>Nesse valor você vai cobrir suas despesas e ter 50% de lucro.</p>
+        </div>
+    </main>
+
+
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
